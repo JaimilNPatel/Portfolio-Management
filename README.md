@@ -1,109 +1,70 @@
-# Portfolio Manager
+# Getting Started with Create React App
 
-[![FastAPI](https://img.shields.io/badge/backend-FastAPI-blue)](https://fastapi.tiangolo.com/) [![React](https://img.shields.io/badge/frontend-React-blue)](https://react.dev/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A full-stack portfolio management application for tracking stocks, mutual funds, ETFs, and more. Built with **FastAPI** (Python) for the backend and **React** (MUI) for the frontend.
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## Features
+### `npm start`
 
-- Add, update, and remove assets (stocks, mutual funds, ETFs, crypto, etc.)
-- Real-time price fetching (Yahoo Finance, AMFI India)
-- Multi-currency support with FX rates
-- Portfolio analytics and summary
-- Transaction history and audit
-- Modern, responsive UI (Material-UI)
-- Search and autocomplete for symbols
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Project Structure
+### `npm test`
 
-```
-Project/
-  main.py              # FastAPI backend
-  requirements.txt     # Backend dependencies
-  portfolio.db         # SQLite database (auto-created)
-  frontend/            # React frontend (MUI, Create React App)
-    package.json       # Frontend dependencies
-    src/               # React source code
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-## Getting Started
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### 1. Backend (FastAPI)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-#### Requirements
-- Python 3.8+
-- [pip](https://pip.pypa.io/en/stable/)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### Setup
-```bash
-# Create and activate a virtual environment (Windows example)
-python -m venv venv
-venv\Scripts\activate
+### `npm run eject`
 
-# Install dependencies
-pip install -r requirements.txt
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-# Run the FastAPI server
-uvicorn main:app --reload
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-The API will be available at [http://localhost:8000](http://localhost:8000)
-- Interactive docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 2. Frontend (React)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-#### Requirements
-- Node.js (v18+ recommended)
-- npm
+## Learn More
 
-#### Setup
-```bash
-cd frontend
-npm install
-npm start
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-The app will run at [http://localhost:3000](http://localhost:3000)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-## Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Add assets using the **Add/Update Asset** button
-- View portfolio summary, analytics, and transaction history
-- Sell or delete assets as needed
-- Switch base currency for portfolio valuation
+### Analyzing the Bundle Size
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## API Endpoints (Backend)
+### Making a Progressive Web App
 
-- `POST /portfolio/add` — Add or update an asset
-- `POST /portfolio/remove` — Remove or sell an asset
-- `GET /portfolio` — Get current portfolio
-- `GET /price/{symbol}` — Get live price for a symbol
-- `GET /mutualfund/list` — List all mutual funds (AMFI)
-- `GET /mutualfund/nav` — Get NAV by code or name
-- `GET /fxrate/{from}/{to}` — Get FX rate
-- `GET /currencies` — List supported currencies
-- `GET /history` — Transaction history
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-See [http://localhost:8000/docs](http://localhost:8000/docs) for full API documentation.
+### Advanced Configuration
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Contributing
+### Deployment
 
-Pull requests and issues are welcome! Please open an issue to discuss your idea or bug before submitting a PR.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
----
+### `npm run build` fails to minify
 
-## License
-
-MIT License. See [LICENSE](LICENSE) for details. 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
